@@ -5,7 +5,10 @@ description: Plugin to make github releases
 keywords:
   - github
   - release
-home: https://github.com/codefresh-contrib/cfstep-github-release
+categories:
+  - git
+  - release
+# home: https://github.com/codefresh-contrib/cfstep-github-release
 sources:
   - https://github.com/codefresh-contrib/cfstep-github-release
 maintainers: 
