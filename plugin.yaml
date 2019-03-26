@@ -14,7 +14,7 @@ sources:
 maintainers: 
   - name: Alex Cheshko 
     email: a.cheshko@codefresh.io
-icon: https://raw.githubusercontent.com/codefresh-plugins/cfstep-github-release/blob/master/icon.jpg
+icon: https://raw.githubusercontent.com/codefresh-plugins/cfstep-github-release/master/icon.jpg
 envs:
   - name: GITHUB_TOKEN
     type: required
