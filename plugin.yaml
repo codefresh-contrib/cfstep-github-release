@@ -14,7 +14,7 @@ sources:
 maintainers: 
   - name: Alex Cheshko 
     email: a.cheshko@codefresh.io
-icon: A URL to an SVG or PNG image to be used as an icon (optional)
+icon: https://github.com/codefresh-plugins/cfstep-github-release/blob/master/icon.jpg
 envs:
   - name: GITHUB_TOKEN
     type: required
