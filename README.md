@@ -8,11 +8,11 @@ This example creates a release and uploads files to it:
 
 ```
 github_prerelease:
-        image: codefreshplugins/cfstep-github-release
-        environment:
-          - GITHUB_TOKEN=${{GITHUB_TOKEN}}
-          - FILES=bin/app-*
-          - PRERELEASE=true
+  image: codefreshplugins/cfstep-github-release
+  environment:
+    - GITHUB_TOKEN=${{GITHUB_TOKEN}}
+    - FILES=bin/app-*
+    - PRERELEASE=true
 ```
 ## Advanced usage
 
@@ -20,11 +20,11 @@ If one wants to do more actions to manage releases than just to create them, it 
 
 ```
 github_release_modify:
-        image: codefreshplugins/cfstep-github-release
-        commands:
-          - github-release edit --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED --name "$CF_BRANCH_TAG_NORMALIZED"
-          - github-release delete --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED
-          - github-release --help
+  image: codefreshplugins/cfstep-github-release
+  commands:
+    - github-release edit --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED --name "$CF_BRANCH_TAG_NORMALIZED"
+    - github-release delete --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED
+    - github-release --help
 ```
 
 More details about the paramaters and examples see [here](https://github.com/aktau/github-release)
