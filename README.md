@@ -8,7 +8,7 @@ This example creates a release and uploads files to it:
 
 ```
 github_prerelease:
-        image: codefresh/cfstep-github-release
+        image: codefreshplugins/cfstep-github-release
         environment:
           - GITHUB_TOKEN=${{GITHUB_TOKEN}}
           - FILES=bin/app-*
