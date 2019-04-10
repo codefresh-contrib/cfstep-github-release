@@ -19,8 +19,8 @@ github_prerelease:
 If one wants to do more actions to manage releases than just to create them, it is possible to override the behaviour with custom commands:
 
 ```
-github_prerelease:
-        image: codefresh/cfstep-github-release
+github_release_modify:
+        image: codefreshplugins/cfstep-github-release
         commands:
           - github-release edit --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED --name "$CF_BRANCH_TAG_NORMALIZED"
           - github-release delete --user $CF_REPO_OWNER --repo $CF_REPO_NAME --tag $CF_BRANCH_TAG_NORMALIZED
