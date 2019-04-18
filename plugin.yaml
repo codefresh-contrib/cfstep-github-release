@@ -6,8 +6,8 @@ keywords:
   - github
   - release
 categories:
-  - Git
-  - Release
+  - git
+  - release
 # home: https://github.com/codefresh-contrib/cfstep-github-release
 sources:
   - https://github.com/codefresh-contrib/cfstep-github-release
