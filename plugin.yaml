@@ -1,6 +1,6 @@
-image: docker.io/codefresh/cfstep-github-release
+image: codefreshplugins/cfstep-github-release
 tag: master
-version: 0.1.0
+version: 0.2.0
 description: Plugin to make github releases
 keywords:
   - github
@@ -14,7 +14,7 @@ sources:
 maintainers: 
   - name: Alex Cheshko 
     email: a.cheshko@codefresh.io
-icon: A URL to an SVG or PNG image to be used as an icon (optional)
+icon: https://raw.githubusercontent.com/codefresh-plugins/cfstep-github-release/master/icon.jpg
 envs:
   - name: GITHUB_TOKEN
     type: required
@@ -27,7 +27,10 @@ envs:
     description: Codefresh provided variable containing repository name
   - name: CF_BRANCH_TAG_NORMALIZED
     type: required
-    description: Codefresh provided variable containing branch/tag name
+    description: Codefresh provided variable containing tag name
+  - name: CF_TARGET_BRANCH
+    type: optional
+    description: Codefresh provided variable containing target branch
   - name: PRERELEASE
     description: If true, this variable tells the plugin to create a pre-release
   - name: FILES
